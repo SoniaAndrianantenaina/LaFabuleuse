@@ -37,3 +37,7 @@ body {
 .fs-16 {
     font-size: 16px !important;
 }
+
+.bg-blue {
+    background-color: #0f2949;
+}
