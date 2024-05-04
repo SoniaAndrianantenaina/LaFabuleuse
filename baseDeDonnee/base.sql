@@ -22,19 +22,16 @@ CREATE TABLE `lieux` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
--- fabulous.services definition
-
 -- fabulous.services definition
 
 CREATE TABLE `services` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nom` varchar(200) DEFAULT NULL,
   `description` varchar(250) DEFAULT NULL,
+  `image` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 -- fabulous.typeclients definition
 
 CREATE TABLE `typeclients` (
@@ -133,5 +130,5 @@ CREATE TABLE `reservation_service` (
   KEY `reservation_service_FK` (`idreservation`),
   KEY `reservation_service_FK_1` (`idservice`),
   CONSTRAINT `reservation_service_FK` FOREIGN KEY (`idreservation`) REFERENCES `reservation` (`id`),
-  CONSTRAINT `reservation_service_FK_1` FOREIGN KEY (`idservice`) REFERENCES `services` (`id`)
+  CONSTRAINT `reservation_service_FK_1` FOREIGN KEY (`idservice`) REFERENCES `servicesdetails` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

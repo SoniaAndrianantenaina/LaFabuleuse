@@ -24,12 +24,14 @@ INSERT INTO fabulous.lieux (nom) VALUES
 	 ('Espace'),
 	 ('Bateau'),
 	 ('Terrasse');
-INSERT INTO fabulous.services (nom,description) VALUES
-	 ('Service Traiteur','Ayez confiance en nous pour vos repas, cocktails, ou barbecue. Nos traiteurs hors pair ne vous decevront pas'),
-	 ('Décoration Fabulous','Donnez du plaisir à vos yeux grâce à nos décorations FABULOUS !!! Nous respecterons votre thème, vous serez époustoufflé'),
-	 ('Animations Musique','Une fête sans musique est une fête incomplete. Avec notre service animation musique, vous avez le choix entre un orchestre ou un DJ pour vous ambiancer'),
-	 ('Animations Jeux','Quoi de mieux pour renforcer votre équipe que des jeux de groupe. Nous pouvons vous organiser des petits jeux de groupe pour votre soirée.'),
-	 ('Bar','Un barman peut être à votre disposition, pour ajouter un peu de peps à votre soirée.');
+INSERT INTO fabulous.services (nom,description,image) VALUES
+	 ('Service Traiteur','Ayez confiance en nous pour vos repas, cocktails, ou barbecue. Nos traiteurs hors pair ne vous decevront pas','caterer.jpg'),
+	 ('Décoration Fabulous','Donnez du plaisir à vos yeux grâce à nos décorations FABULOUS !!! Nous respecterons votre thème, vous serez époustoufflé','decoration.jpg'),
+	 ('Animations Musique','Une fête sans musique est une fête incomplete. Avec notre service animation musique, vous avez le choix entre un orchestre ou un DJ pour vous ambiancer','dj2.jpg'),
+	 ('Animations Jeux','Quoi de mieux pour renforcer votre équipe que des jeux de groupe. Nous pouvons vous organiser des petits jeux de groupe pour votre soirée.','bierePong.jpg'),
+	 ('Bar','Un barman peut être à votre disposition, pour ajouter un peu de peps à votre soirée.','bar_tender.jpg'),
+	 ('Invitation','Besoin d''une invitation ? Pas de problème , nous pouvons nous en charger.','invitation.jpg');
+
 
 INSERT INTO fabulous.servicesdetails (idservices,nom,prix,details,photo) VALUES
 	 (1,'Pack1',200000.0,'Entré froide, entré chaude , résistance, dessert',NULL),
@@ -46,6 +48,9 @@ INSERT INTO fabulous.reservation (idClient,datePrevue,idTypeSoiree,idTheme,nbPar
 INSERT INTO fabulous.reservation_service (idreservation,idservice) VALUES
 	 (1,1),
 	 (1,2),
-	 (2,5),
 	 (1,3),
-	 (2,4);
+	 (1,5),
+	 (2,4),
+	 (2,8),
+	 (2,2),
+	 (2,1);
