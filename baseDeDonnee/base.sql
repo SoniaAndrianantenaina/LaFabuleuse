@@ -25,13 +25,15 @@ CREATE TABLE `lieux` (
 
 -- fabulous.services definition
 
+-- fabulous.services definition
+
 CREATE TABLE `services` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nom` varchar(200) DEFAULT NULL,
+  `description` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- fabulous.typeclients definition
 

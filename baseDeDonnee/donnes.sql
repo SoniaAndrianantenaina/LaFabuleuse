@@ -24,12 +24,13 @@ INSERT INTO fabulous.lieux (nom) VALUES
 	 ('Espace'),
 	 ('Bateau'),
 	 ('Terrasse');
-INSERT INTO fabulous.services (nom) VALUES
-	 ('Service Traiteur'),
-	 ('Décoration Fabulous'),
-	 ('Animations Musique'),
-	 ('Animations Jeux'),
-	 ('Bar');
+INSERT INTO fabulous.services (nom,description) VALUES
+	 ('Service Traiteur','Ayez confiance en nous pour vos repas, cocktails, ou barbecue. Nos traiteurs hors pair ne vous decevront pas'),
+	 ('Décoration Fabulous','Donnez du plaisir à vos yeux grâce à nos décorations FABULOUS !!! Nous respecterons votre thème, vous serez époustoufflé'),
+	 ('Animations Musique','Une fête sans musique est une fête incomplete. Avec notre service animation musique, vous avez le choix entre un orchestre ou un DJ pour vous ambiancer'),
+	 ('Animations Jeux','Quoi de mieux pour renforcer votre équipe que des jeux de groupe. Nous pouvons vous organiser des petits jeux de groupe pour votre soirée.'),
+	 ('Bar','Un barman peut être à votre disposition, pour ajouter un peu de peps à votre soirée.');
+
 INSERT INTO fabulous.servicesdetails (idservices,nom,prix,details,photo) VALUES
 	 (1,'Pack1',200000.0,'Entré froide, entré chaude , résistance, dessert',NULL),
 	 (1,'Pack2',100000.0,'Barbecue, viande de votre choix , crustacé',NULL),
