@@ -58,7 +58,7 @@
                     <div class="navbar-nav mx-auto">
                         <a href="{{ url('/') }}" class="nav-item nav-link active">Accueil</a>
                         <a href="about.html" class="nav-item nav-link">A propos</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="{{url('/liste-des-services')}}" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light">
