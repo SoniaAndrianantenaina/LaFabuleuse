@@ -25,8 +25,8 @@
                         dans des lieux prestigieux comme des hôtels de luxe, des galeries d'art ou des demeures somptueuses.
                         Ces soirées sont généralement fréquentées par des personnes de la haute société, des célébrités, des
                         personnalités influentes et des membres de la classe aisée. </p>
-                    <a href="" class="btn btn-primary py-3 px-5 rounded-pill">Plus<i
-                            class="fas fa-arrow-right ps-2"></i></a>
+                    <a href="{{ url('/liste-des-services') }}" target="_blank"
+                        class="btn btn-primary py-3 px-5 rounded-pill">Plus<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
 
@@ -38,8 +38,8 @@
                         succès ou des partenariats. Elle réunit généralement des collègues, des partenaires commerciaux, des
                         clients ou des investisseurs, offrant un cadre formel ou semi-formel propice aux échanges, aux
                         présentations professionnelles et aux activités de networking. </p>
-                    <a href="" class="btn btn-primary py-3 px-5 rounded-pill">Plus<i
-                            class="fas fa-arrow-right ps-2"></i></a>
+                    <a href="{{ url('/liste-des-services') }}" target="_blank"
+                        class="btn btn-primary py-3 px-5 rounded-pill">Plus<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
                 <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
                     <img src="{{ asset('assets/img/soiree-pro.jpg') }}" class="img-fluid rounded" alt="">
@@ -107,7 +107,8 @@
                                     </div>
                                     <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
                                         <div class="event-img position-relative">
-                                            <img class="img-fluid rounded w-100" src="assets/img/dance.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="assets/img/dance.jpg"
+                                                alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Animation</h4>
                                                 <a href="img/event-2.jpg" data-lightbox="event-2" class="my-auto"><i
@@ -526,6 +527,96 @@
     </div>
     {{-- Fin avis --}}
 
+    <!-- Team Start -->
+    <div class="container-fluid team py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Team</small>
+                <h1 class="display-5 mb-5 text-paillete">Nos fabulous coéquipières</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="assets/img/team/Mihoby.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="text-primary">Mihoby</h4>
+                            <p class="text-white mb-0">Capitaine</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="assets/img/team/Anja.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="text-primary">Anja</h4>
+                            <p class="text-white mb-0">Equipière</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="assets/img/team/Sonia.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="text-primary">Sonia</h4>
+                            <p class="text-white mb-0">Equipière</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid rounded-top " src="assets/img/team/Maphie.jpg" alt="">
+                        <div class="team-content text-center py-3 bg-dark rounded-bottom">
+                            <h4 class="text-primary">Maphie</h4>
+                            <p class="text-white mb-0">Equipière</p>
+                        </div>
+                        <div class="team-icon d-flex flex-column justify-content-center m-4">
+                            <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fas fa-share-alt"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
     {{-- Partenaires --}}
     <div class="container-fluid py-6">
         <div class="container">
@@ -564,7 +655,4 @@
         </div>
     </div>
     {{-- Fin Partenaires --}}
-
-    {{-- A propos --}}
-    {{-- Fin A propos --}}
 @endsection
