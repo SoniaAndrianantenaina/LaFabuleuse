@@ -56,13 +56,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                        <a href="{{url ('/')}}" class="nav-item nav-link active">Accueil</a>
                         <a href="about.html" class="nav-item nav-link">A propos</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light">
-                                <a href="book.html" class="dropdown-item">Réservation</a>
+                                <a href="{{ route('booking')}}" class="dropdown-item">Réservation</a>
                                 <a href="blog.html" class="dropdown-item">Equipe</a>
                                 <a href="testimonial.html" class="dropdown-item">Témoignages</a>
                             </div>
