@@ -20,7 +20,7 @@
                         <li class='item' style="background-image: url({{asset('assets/img/caterer.jpg')}})">
                             <div class='content'>
                                 <h2 class='title'>"Un service traiteur"</h2>
-                                <p class='description'>Ayez confiance en nous pour vos repas, cocktails, ou barbecue. Nos traiteurs ne vous decevront pas</p>
+                                <p class='description'>Ayez confiance en nous pour vos repas, cocktails, ou barbecue. Nos traiteurs hors pair ne vous decevront pas</p>
                                 <button>plus de détails</button>
                             </div>
                         </li>
