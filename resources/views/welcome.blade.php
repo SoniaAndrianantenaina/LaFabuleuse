@@ -317,7 +317,7 @@
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                 <small
-                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Témoignages</small>
+                    class="d-inline-block fw-bold text-light text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Témoignages</small>
                 <h1 class="display-5 mb-5 text-paillete">Découvrez les retours des clients !</h1>
             </div>
             <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp"
@@ -532,7 +532,7 @@
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                 <small
-                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Team</small>
+                    class="d-inline-block fw-bold text-light text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Team</small>
                 <h1 class="display-5 mb-5 text-paillete">Nos fabulous coéquipières</h1>
             </div>
             <div class="row g-4">
@@ -622,7 +622,7 @@
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                 <small
-                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Partenaires</small>
+                    class="d-inline-block fw-bold text-light text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Partenaires</small>
                 <h1 class="display-5 mb-5 text-paillete">Nos incroyables partenaires!</h1>
             </div>
 
