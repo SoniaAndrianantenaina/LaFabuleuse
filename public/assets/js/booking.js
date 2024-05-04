@@ -40,3 +40,20 @@ typeChoices.forEach(typeChoice => {
         
     })
 });
+
+var serviceTitles = document.querySelectorAll('.serviceTitle');
+serviceTitles.forEach(serviceTitle =>{
+    serviceTitle.addEventListener('click', () => {
+        $('#ModalService').modal('show');
+    });
+})
+
+var closeButton = document.querySelector('#closeButton');
+closeButton.addEventListener('click', ()=>{
+    $('#ModalService').modal('hide');
+})
+
+// var ConfirmBooking = document.querySelector('#ConfirmBooking');
+// ConfirmBooking.addEventListener('click', ()=>{
+//     $('#ModalInvitation').modal('show');
+// })
