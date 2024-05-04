@@ -7,16 +7,11 @@ body {
 }
 
 .text-light {
-    color: rgb(154, 154, 154) !important;
+    color: #fff !important;
 }
 
 .ctn-video {
     width: 100%;
-    position: absolute;
-}
-
-.pb-12 {
-    padding-top: 12rem;
 }
 
 .style-title {
@@ -33,4 +28,12 @@ body {
 
 .mt-100 {
     margin-top: 100px;
+}
+
+.star-color {
+    color: #95713b !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
 }

@@ -7,36 +7,12 @@
         </video>
     </div>
 
-    <!-- Hero Start -->
-
-    <div class="container-fluid bg-light py-6 my-6 mt-0 ">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-7 col-md-12">
-                    <h1 class="display-1 mb-4 animated bounceInDown">Book <span class="text-primary">Cater</span>Serv
-                        For Your Dream Event</h1>
-                    {{-- <a href=""
-                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book
-                        Now</a>
-                    <a href=""
-                        class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know
-                        More</a> --}}
-                </div>
-                <div class="col-lg-5 col-md-12">
-                    {{-- <img src="{{ asset('assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn" alt=""> --}}
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Hero End -->
-
-
     <!-- About Satrt -->
-    <div class="container-fluid py-6 pb-12">
+    <div class="container-fluid py-6 pb-5">
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                 <small
-                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Nos
+                    class="d-inline-block fw-bold text-light text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Nos
                     types de soirées</small>
             </div>
             <div class="row g-5 align-items-center">
@@ -73,170 +49,259 @@
     </div>
     <!-- About End -->
 
-
-    <!-- Fact Start-->
-    <div class="container-fluid faqt py-6">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-7">
-                    <div class="row g-4">
-                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="faqt-item bg-primary rounded p-4 text-center">
-                                <i class="fas fa-users fa-4x mb-4 text-white"></i>
-                                <h1 class="display-4 fw-bold" data-toggle="counter-up">689</h1>
-                                <p class="text-dark text-uppercase fw-bold mb-0">Happy Customers</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="faqt-item bg-primary rounded p-4 text-center">
-                                <i class="fas fa-users-cog fa-4x mb-4 text-white"></i>
-                                <h1 class="display-4 fw-bold" data-toggle="counter-up">107</h1>
-                                <p class="text-dark text-uppercase fw-bold mb-0">Expert Chefs</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="faqt-item bg-primary rounded p-4 text-center">
-                                <i class="fas fa-check fa-4x mb-4 text-white"></i>
-                                <h1 class="display-4 fw-bold" data-toggle="counter-up">253</h1>
-                                <p class="text-dark text-uppercase fw-bold mb-0">Events Complete</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-                    <div class="video">
-                        <button type="button" class="btn btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal Video -->
-    {{-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                            allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!-- Fact End -->
-
-
-    <!-- Service Start -->
-    <div class="container-fluid service py-6">
+    {{-- Liste services --}}
+    <div class="container-fluid event py-6">
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                 <small
-                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
-                    Services</small>
-                <h1 class="display-5 mb-5">What We Offer</h1>
+                    class="d-inline-block fw-bold text-light text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Services</small>
+                <h1 class="display-5 mb-5 text-paillete">Tous les services que nous proposons</h1>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-cheese fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Wedding Services</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+            <div class="tab-class text-center">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill"
+                            href="#tab-1">
+                            <span class="text-light" style="width: 150px;">Tout</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex py-2 mx-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-2">
+                            <span class="text-light" style="width: 150px;">Traiteur</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-3">
+                            <span class="text-light" style="width: 150px;">Animation</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-4">
+                            <span class="text-light" style="width: 150px;">Décoration</span>
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill" data-bs-toggle="pill"
+                            href="#tab-5">
+                            <span class="text-light" style="width: 150px;">Buffet</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/buffet.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Traiteur</h4>
+                                                <a href="img/event-1.jpg" data-lightbox="event-1" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/dance.jpg" alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Animation</h4>
+                                                <a href="img/event-2.jpg" data-lightbox="event-2" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/deco.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Décoration</h4>
+                                                <a href="img/event-3.jpg" data-lightbox="event-3" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/boat.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Lieu</h4>
+                                                <a href="img/event-4.jpg" data-lightbox="event-4" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/buffet2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Traiteur</h4>
+                                                <a href="img/event-1.jpg" data-lightbox="event-1" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/dance2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Animation</h4>
+                                                <a href="img/event-2.jpg" data-lightbox="event-2" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/deco2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Décoration</h4>
+                                                <a href="img/event-3.jpg" data-lightbox="event-3" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/lieu2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Lieu</h4>
+                                                <a href="img/event-4.jpg" data-lightbox="event-4" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-pizza-slice fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Corporate Catering</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/buffet.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Traiteur</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-8" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/buffet2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Traiteur</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-9" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-hotdog fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Cocktail Reception</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/dance.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Animation</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-10" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/dance2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Animation</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-11" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-hamburger fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Bento Catering</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                    <div id="tab-4" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/deco.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Décoration</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-12" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/deco2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Décoration</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-13" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-wine-glass-alt fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Pub Party</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-walking fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Home Delivery</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-wheelchair fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Sit-down Catering</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                    <div class="bg-light rounded service-item">
-                        <div class="service-content d-flex align-items-center justify-content-center p-4">
-                            <div class="service-content-icon text-center">
-                                <i class="fas fa-utensils fa-7x text-primary mb-4"></i>
-                                <h4 class="mb-3">Buffet Catering</h4>
-                                <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Read More</a>
+                    <div id="tab-5" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-12">
+                                <div class="row g-4">
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/boat.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Lieu</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-14" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <div class="event-img position-relative">
+                                            <img class="img-fluid rounded w-100" src="assets/img/lieu2.jpg"
+                                                alt="">
+                                            <div class="event-overlay d-flex flex-column p-4">
+                                                <h4 class="me-auto">Lieu</h4>
+                                                <a href="img/01.jpg" data-lightbox="event-15" class="my-auto"><i
+                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,5 +309,220 @@
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    {{-- Fin liste services --}}
+
+    {{-- Avis --}}
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Témoignages</small>
+                <h1 class="display-5 mb-5 text-paillete">Découvrez les retours des clients !</h1>
+            </div>
+            <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp"
+                data-wow-delay="0.1s">
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Jean-Luc</h4>
+                            <p class="m-0">Comptable</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Ce site d'événementiel m'a vraiment impressionné. Leur équipe est
+                            super
+                            pro et réactive, ils ont géré mon événement de A à Z avec un souci du détail incroyable. </p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Savannah</h4>
+                            <p class="m-0">Styliste</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Je suis ravi d'avoir choisi ce site d'événementiel pour organiser
+                            mon dernier événement. Leur équipe a fait preuve d'un professionnalisme exemplaire. </p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Nathalie</h4>
+                            <p class="m-0">Professeure</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Ce site d'événementiel m'a vraiment impressionné. Leur équipe est
+                            super
+                            pro et réactive, ils ont géré mon événement de A à Z avec un souci du détail incroyable. </p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-4.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Martin</h4>
+                            <p class="m-0">Développeur</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Ce site d'événementiel est tout simplement exceptionnel. Leur
+                            expertise et leur attention aux détails ont fait de mon événement un moment inoubliable. J'ai
+                            adoré </p>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp" data-wow-delay="0.3s">
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-1.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Quentin</h4>
+                            <p class="m-0">Commerciale</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Je suis enchanté par l'expérience que j'ai eue avec ce site
+                            d'événementiel. Leur équipe a su transformer mes idées en réalité et créer une atmosphère
+                            vraiment magique. </p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Gabrielle</h4>
+                            <p class="m-0">Vendeuse</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Ce site d'événementiel m'a vraiment impressionné. Leur équipe est
+                            super
+                            pro et réactive, ils ont géré mon événement de A à Z avec un souci du détail incroyable. </p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-3.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Karine</h4>
+                            <p class="m-0">RH</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Je suis ravi d'avoir choisi ce site d'événementiel pour organiser
+                            mon dernier événement. Leur équipe a fait preuve d'un professionnalisme exemplaire. </p>
+                    </div>
+                </div>
+                <div class="testimonial-item rounded bg-light">
+                    <div class="d-flex mb-3">
+                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded-circle flex-shrink-0"
+                            alt="">
+                        <div class="position-absolute" style="top: 15px; right: 20px; color:rgb(231, 228, 228)">
+                            <i class="fa fa-quote-right fa-2x"></i>
+                        </div>
+                        <div class="ps-3 my-auto">
+                            <h4 class="mb-0">Sonia</h4>
+                            <p class="m-0">Comptable</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="d-flex">
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                            <i class="fas fa-star star-color"></i>
+                        </div>
+                        <p class="fs-5 m-0 pt-3 fs-16">Je suis enchanté par l'expérience que j'ai eue avec ce site
+                            d'événementiel. Leur équipe a su transformer mes idées en réalité et créer une atmosphère
+                            vraiment magique. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- Fin avis --}}
 @endsection
