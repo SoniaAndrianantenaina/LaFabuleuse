@@ -1,7 +1,7 @@
 @extends('layout.footer')
 @section('content')
-    <div class="video-header">
-        <video width="320" height="240" controls>
+    <div class="ctn-video">
+        <video width="100%" loop preload="auto" autoplay="true" muted>
             <source src="{{ asset('assets/video/header-video.mp4') }}" type="video/mp4">
             Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
@@ -9,24 +9,21 @@
 
     <!-- Hero Start -->
 
-    <div class="container-fluid bg-light py-6 my-6 mt-0">
+    <div class="container-fluid bg-light py-6 my-6 mt-0 ">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-7 col-md-12">
-                    <small
-                        class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome
-                        to CaterServ</small>
                     <h1 class="display-1 mb-4 animated bounceInDown">Book <span class="text-primary">Cater</span>Serv
                         For Your Dream Event</h1>
-                    <a href=""
+                    {{-- <a href=""
                         class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book
                         Now</a>
                     <a href=""
                         class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know
-                        More</a>
+                        More</a> --}}
                 </div>
                 <div class="col-lg-5 col-md-12">
-                    <img src="{{ asset('assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn" alt="">
+                    {{-- <img src="{{ asset('assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn" alt=""> --}}
                 </div>
             </div>
         </div>
@@ -35,7 +32,7 @@
 
 
     <!-- About Satrt -->
-    <div class="container-fluid py-6">
+    <div class="container-fluid py-6 pb-20">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
@@ -115,7 +112,7 @@
         </div>
     </div>
     <!-- Modal Video -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{-- <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -131,7 +128,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Fact End -->
 
 
@@ -1307,8 +1304,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
                     <div class="team-item rounded">
-                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-4.jpg') }}"
-                            alt="">
+                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-4.jpg') }}" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">
                             <h4 class="text-primary">Adam Smith</h4>
                             <p class="text-white mb-0">Head Chef</p>

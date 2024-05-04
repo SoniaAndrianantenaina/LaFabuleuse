@@ -9,3 +9,18 @@ body {
 .text-light {
     color: #fff !important;
 }
+
+.ctn-video {
+    width: 100%;
+    position: absolute;
+}
+
+.pb-20 {
+    padding-top: 20rem;
+}
+
+.style-title {
+    position: relative;
+    left: 250px;
+    top: 150px;
+}
