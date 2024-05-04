@@ -159,7 +159,7 @@ h6,
 
 /*** Events Start ***/
 .event .tab-class .nav-item a.active {
-    background: var(--bs-primary) !important;
+    background: #cd8f30 !important;
 }
 
 .event .event-img .event-overlay {
