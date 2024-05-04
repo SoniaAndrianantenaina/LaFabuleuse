@@ -2,79 +2,73 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Login &amp; Sign Up Form Concept</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <title>CodePen - Animated Login and Sign up</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400, 500" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="cotn_principal">
-<div class="cont_centrar">
+<!--
+  This was created based on the Dribble shot by Deepak Yadav that you can find at https://goo.gl/XRALsw
+  I'm @hk95 on GitHub. Feel free to message me anytime.
+-->
 
-  <div class="cont_login">
-<div class="cont_info_log_sign_up">
-      <div class="col_md_login">
-<div class="cont_ba_opcitiy">
-        
-        <h2>LOGIN</h2>  
-  {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>  --}}
-  <button class="btn_login" onclick="change_to_login()">LOGIN</button>
-  </div>
-  </div>
-<div class="col_md_sign_up">
-<div class="cont_ba_opcitiy" id="ba_opacity">
-  <h2>INSCRIPTION</h2>
+<section class="user">
+  <div class="user_options-container">
+    <div class="user_options-text">
+      <div class="user_options-unregistered">
+        <h2 class="user_unregistered-title">Don't have an account?</h2>
+        <p class="user_unregistered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+        <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+      </div>
 
-  
-  {{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
-
-  <button class="btn_sign_up" onclick="change_to_sign_up()">S'inscrire</button>
-</div>
-  </div>
-       </div>
-
-    
-    <div class="cont_back_info">
-       <div class="cont_img_back_grey">
-       <img src="{{ asset('assets/img/wine.jpg') }}" alt="" />
-       </div>
-       
-    </div>
-<div class="cont_forms" >
-    <div class="cont_img_back_">
-       <img src="{{ asset('assets/img/wine.jpg') }}" alt="" />
-       </div>
- <div class="cont_form_login">
-<a href="#" onclick="hidden_login_and_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
-   <h2>LOGIN</h2>
-   <form method="POST" action="{{ route('connectUser') }}">
-        <input type="text" placeholder="Email" name="email" />
-        <input type="password" placeholder="Password" name="password"/>
-        <button class="btn_login" onclick="change_to_login()">Se Connecter</button>
-   </form>
- 
-  </div>
-  
-   <div class="cont_form_sign_up">
-<a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-     <h2>INSCRIPTION</h2>
-     <form>
-        <input type="text" placeholder="Email" name="email" />
-        <input type="text" placeholder="User" />
-        <input type="password" placeholder="Password" name="password"/>
-        <input type="password" placeholder="Confirm Password" />
-        <button class="btn_sign_up" onclick="change_to_sign_up()">S'inscrire</button>
-     </form>
-
-  </div>
-
+      <div class="user_options-registered">
+        <h2 class="user_registered-title">Have an account?</h2>
+        <p class="user_registered-text">Banjo tote bag bicycle rights, High Life sartorial cray craft beer whatever street art fap.</p>
+        <button class="user_registered-login" id="login-button">Login</button>
+      </div>
     </div>
     
+    <div class="user_options-forms" id="user_options-forms">
+      <div class="user_forms-login">
+        <h2 class="forms_title">Login</h2>
+        <form class="forms_form" method="POST" action="{{ route('connectUser') }}">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="email" placeholder="Email" name="email" class="forms_field-input" required autofocus />
+            </div>
+            <div class="forms_field">
+              <input type="password" placeholder="Mot de Passe" name="password" class="forms_field-input" required />
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <input type="submit" value="Se connecter" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+      <div class="user_forms-signup">
+        <h2 class="forms_title">Sign Up</h2>
+        <form class="forms_form">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="text" placeholder="Full Name" name="" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="email" placeholder="Email" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="password" placeholder="Password" class="forms_field-input" required />
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <input type="submit" value="Sign up" class="forms_buttons-action">
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
- </div>
-</div>
+</section>
 <!-- partial -->
   <script  src="{{ asset('assets/js/login.js') }}"></script>
 

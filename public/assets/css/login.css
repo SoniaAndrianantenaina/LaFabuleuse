@@ -1,370 +1,330 @@
-/* ------------------------------------ Click on login and Sign Up to  changue and view the effect
----------------------------------------
-*/
+/**
+ * * General variables
+ * */
+/**
+ * * General configs
+ * */
+ * {
+  box-sizing: border-box;
+}
 
-* {
-    margin: 0px auto;
-    padding: 0px;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  .cotn_principal {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    height: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfd8dc+0,607d8b+100,b0bec5+100 */
-    background: #08182b; /* Old browsers */
-    /* background: -moz-linear-gradient(
-      -45deg,
-      #cfd8dc 0%,
-      #607d8b 100%,
-      #b0bec5 100% */
-    /* ); FF3.6-15 */
-    /* background: -webkit-linear-gradient(
-      -45deg,
-      #cfd8dc 0%,
-      #607d8b 100%,
-      #b0bec5 100% */
-    /* ); Chrome10-25,Safari5.1-6 */
-    /* background: linear-gradient(
-      135deg,
-      #cfd8dc 0%,
-      #607d8b 100%,
-      #b0bec5 100% */
-    /* ); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfd8dc', endColorstr='#b0bec5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  }
-  
-  .cont_centrar {
-    display: flex;
-    align-self: center;
-    width: 100%;
-  }
-  
-  .cont_login {
-    position: relative;
-    width: 640px;
-  }
-  
-  .cont_back_info {
-    position: relative;
-    float: left;
-    width: 640px;
-    height: 280px;
-    overflow: hidden;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 1em;
+}
 
-    /* background-color: #fff; */
-    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
+button {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+input {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+input[type=submit] {
+  cursor: pointer;
+}
+input::-moz-placeholder {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+input:-ms-input-placeholder {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+input::placeholder {
+  font-size: 0.85rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+}
+
+/**
+ * * Bounce to the left side
+ * */
+@-webkit-keyframes bounceLeft {
+  0% {
+    transform: translate3d(100%, -50%, 0);
   }
-  
-  .cont_forms {
-    position: absolute;
-    overflow: hidden;
-    top: 0px;
-    left: 0px;
-    width: 320px;
-    height: 280px;
-    /* background-color: #eee; */
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+  50% {
+    transform: translate3d(-30px, -50%, 0);
   }
-  
-  .cont_forms_active_login {
-    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
-    height: 420px;
-    top: -60px;
-    left: 0px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+  100% {
+    transform: translate3d(0, -50%, 0);
   }
-  
-  .cont_forms_active_sign_up {
-    box-shadow: 1px 10px 30px -10px rgba(0, 0, 0, 0.5);
-    height: 420px;
-    top: -60px;
-    left: 320px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+}
+@keyframes bounceLeft {
+  0% {
+    transform: translate3d(100%, -50%, 0);
   }
-  
-  .cont_img_back_grey {
-    position: absolute;
-    width: 950px;
-    top: -80px;
-    left: -116px;
+  50% {
+    transform: translate3d(-30px, -50%, 0);
   }
-  
-  .cont_img_back_grey > img {
-    width: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    opacity: 0.2;
-    animation-name: animar_fondo;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  100% {
+    transform: translate3d(0, -50%, 0);
   }
-  
-  .cont_img_back_ {
-    position: absolute;
-    width: 950px;
-    top: -80px;
-    left: -116px;
+}
+/**
+ * * Bounce to the left side
+ * */
+@-webkit-keyframes bounceRight {
+  0% {
+    transform: translate3d(0, -50%, 0);
   }
-  
-  .cont_img_back_ > img {
-    width: 100%;
-    opacity: 0.3;
-    animation-name: animar_fondo;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
   }
-  
-  .cont_forms_active_login > .cont_img_back_ {
-    top: -20px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+  100% {
+    transform: translate3d(100%, -50%, 0);
   }
-  
-  .cont_forms_active_sign_up > .cont_img_back_ {
-    top: -20px;
-    left: -435px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+}
+@keyframes bounceRight {
+  0% {
+    transform: translate3d(0, -50%, 0);
   }
-  
-  .cont_info_log_sign_up {
-    position: absolute;
-    width: 640px;
-    height: 280px;
-    top: 0px;
-    z-index: 1;
+  50% {
+    transform: translate3d(calc(100% + 30px), -50%, 0);
   }
-  
-  .col_md_login {
-    position: relative;
-    float: left;
-    width: 50%;
+  100% {
+    transform: translate3d(100%, -50%, 0);
   }
-  
-  .col_md_login > h2 {
-    font-weight: 400;
-    margin-top: 70px;
-    color: #757575;
+}
+/**
+ * * Show Sign Up form
+ * */
+@-webkit-keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
   }
-  
-  .col_md_login > p {
-    font-weight: 400;
-    margin-top: 15px;
-    width: 80%;
-    color: #37474f;
+}
+@keyframes showSignUp {
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
   }
-  
-  .btn_login {
-    background-color: #08182b;
-    border: none;
-    padding: 10px;
-    width: 200px;
-    border-radius: 3px;
-    box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
-    color: #fff;
-    margin-top: 10px;
-    cursor: pointer;
+}
+/**
+ * * Page background
+ * */
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  background-size: cover;
+}
+.user_options-container {
+  position: relative;
+  width: 80%;
+}
+.user_options-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #08182b;
+  border-radius: 3px;
+}
+
+/**
+ * * Registered and Unregistered user box and text
+ * */
+.user_options-registered,
+.user_options-unregistered {
+  width: 50%;
+  padding: 75px 45px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.user_registered-title,
+.user_unregistered-title {
+  margin-bottom: 15px;
+  font-size: 1.66rem;
+  line-height: 1em;
+}
+
+.user_unregistered-text,
+.user_registered-text {
+  font-size: 0.83rem;
+  line-height: 1.4em;
+}
+
+.user_registered-login,
+.user_unregistered-signup {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.2rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.user_registered-login:hover,
+.user_unregistered-signup:hover {
+  color: rgba(34, 34, 34, 0.85);
+  background-color: #ccc;
+}
+
+/**
+ * * Login and signup forms
+ * */
+.user_options-forms {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: calc(50% - 30px);
+  min-height: 420px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform: translate3d(100%, -50%, 0);
+  transition: transform 0.4s ease-in-out;
+}
+.user_options-forms .user_forms-login {
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+.user_options-forms .forms_title {
+  margin-bottom: 45px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #082f5e;
+  letter-spacing: 0.1rem;
+}
+.user_options-forms .forms_field:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.user_options-forms .forms_field-input {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 6px 20px 6px 6px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 0.1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+.user_options-forms .forms_field-input:focus {
+  border-color: gray;
+}
+.user_options-forms .forms_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+.user_options-forms .forms_buttons-forgot {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1rem;
+  color: #ccc;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+.user_options-forms .forms_buttons-forgot:hover {
+  color: #b3b3b3;
+}
+.user_options-forms .forms_buttons-action {
+  background-color: #082f5e;
+  border-radius: 3px;
+  padding: 10px 35px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.user_options-forms .forms_buttons-action:hover {
+  background-color: #e14641;
+}
+.user_options-forms .user_forms-signup,
+.user_options-forms .user_forms-login {
+  position: absolute;
+  top: 70px;
+  left: 40px;
+  width: calc(100% - 80px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.5s ease-in-out;
+}
+.user_options-forms .user_forms-signup {
+  transform: translate3d(120px, 0, 0);
+}
+.user_options-forms .user_forms-signup .forms_buttons {
+  justify-content: flex-end;
+}
+.user_options-forms .user_forms-login {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+/**
+ * * Triggers
+ * */
+.user_options-forms.bounceLeft {
+  -webkit-animation: bounceLeft 1s forwards;
+          animation: bounceLeft 1s forwards;
+}
+.user_options-forms.bounceLeft .user_forms-signup {
+  -webkit-animation: showSignUp 1s forwards;
+          animation: showSignUp 1s forwards;
+}
+.user_options-forms.bounceLeft .user_forms-login {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(-120px, 0, 0);
+}
+.user_options-forms.bounceRight {
+  -webkit-animation: bounceRight 1s forwards;
+          animation: bounceRight 1s forwards;
+}
+
+/**
+ * * Responsive 990px
+ * */
+@media screen and (max-width: 990px) {
+  .user_options-forms {
+    min-height: 350px;
   }
-  
-  .col_md_sign_up {
-    position: fixed;
-    margin-left: 40%;
-    width: 50%;
+  .user_options-forms .forms_buttons {
+    flex-direction: column;
   }
-  
-  .cont_ba_opcitiy > h2 {
-    font-weight: 400;
-    color: #fff;
+  .user_options-forms .user_forms-login .forms_buttons-action {
+    margin-top: 30px;
   }
-  
-  .cont_ba_opcitiy > p {
-    font-weight: 400;
-    margin-top: 15px;
-    color: #fff;
+  .user_options-forms .user_forms-signup,
+.user_options-forms .user_forms-login {
+    top: 40px;
   }
-  /* ----------------------------------
-  background text    
-  ------------------------------------
-   */
-  .cont_ba_opcitiy {
-    position: relative;
-    background-color: rgba(120, 144, 156, 0.55);
-    width: 80%;
-    border-radius: 3px;
-    margin-top: 60px;
-    padding: 15px 0px;
+
+  .user_options-registered,
+.user_options-unregistered {
+    padding: 50px 45px;
   }
-  
-  .btn_sign_up {
-    background-color: #133763;
-    border: none;
-    padding: 10px;
-    width: 200px;
-    border-radius: 3px;
-    box-shadow: 1px 5px 20px -5px rgba(0, 0, 0, 0.4);
-    color: #fff;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  .cont_forms_active_sign_up {
-    z-index: 2;
-  }
-  
-  @-webkit-keyframes animar_fondo {
-    from {
-      -webkit-transform: scale(1) translate(0px);
-      -moz-transform: scale(1) translate(0px);
-      -ms-transform: scale(1) translate(0px);
-      -o-transform: scale(1) translate(0px);
-      transform: scale(1) translate(0px);
-    }
-    to {
-      -webkit-transform: scale(1.5) translate(50px);
-      -moz-transform: scale(1.5) translate(50px);
-      -ms-transform: scale(1.5) translate(50px);
-      -o-transform: scale(1.5) translate(50px);
-      transform: scale(1.5) translate(50px);
-    }
-  }
-  @-o-keyframes identifier {
-    from {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-    to {
-      -webkit-transform: scale(1.5);
-      -moz-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      -o-transform: scale(1.5);
-      transform: scale(1.5);
-    }
-  }
-  @-moz-keyframes identifier {
-    from {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-    to {
-      -webkit-transform: scale(1.5);
-      -moz-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      -o-transform: scale(1.5);
-      transform: scale(1.5);
-    }
-  }
-  @keyframes identifier {
-    from {
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      -ms-transform: scale(1);
-      -o-transform: scale(1);
-      transform: scale(1);
-    }
-    to {
-      -webkit-transform: scale(1.5);
-      -moz-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-      -o-transform: scale(1.5);
-      transform: scale(1.5);
-    }
-  }
-  .cont_form_login {
-    position: absolute;
-    opacity: 0;
-    display: none;
-    width: 320px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  
-  .cont_forms_active_login {
-    z-index: 2;
-  }
-  
-  .cont_form_sign_up {
-    position: absolute;
-    width: 320px;
-    float: left;
-    opacity: 0;
-    display: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  
-  .cont_form_sign_up > input {
-    text-align: left;
-    padding: 15px 5px;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 260px;
-    border: none;
-    color: #757575;
-  }
-  
-  .cont_form_sign_up > h2 {
-    margin-top: 50px;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  
-  .cont_form_login > input {
-    padding: 15px 5px;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 260px;
-    border: none;
-    text-align: left;
-    color: #757575;
-  }
-  
-  .cont_form_login > h2 {
-    margin-top: 110px;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  .cont_form_login > a,
-  .cont_form_sign_up > a {
-    color: #757575;
-    position: relative;
-    float: left;
-    margin: 10px;
-    margin-left: 30px;
-  }
+}
