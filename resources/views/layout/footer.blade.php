@@ -56,13 +56,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="{{url ('/')}}" class="nav-item nav-link active">Accueil</a>
+                        <a href="{{ url('/') }}" class="nav-item nav-link active">Accueil</a>
                         <a href="about.html" class="nav-item nav-link">A propos</a>
-                        <a href="{{url('/liste-des-services')}}" class="nav-item nav-link">Services</a>
+                        <a href="{{ url('/liste-des-services') }}" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light">
-                                <a href="{{ route('booking')}}" class="dropdown-item">Réservation</a>
+                                <a href="{{ route('booking') }}" class="dropdown-item">Réservation</a>
                                 <a href="blog.html" class="dropdown-item">Equipe</a>
                                 <a href="testimonial.html" class="dropdown-item">Témoignages</a>
                             </div>
@@ -169,7 +169,7 @@
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">Ampela Impakt</a> with love.
+                    Conçu avec 🤍 par<a class="border-bottom" href="https://htmlcodex.com">Ampela Impakt</a>.
                 </div>
             </div>
         </div>
