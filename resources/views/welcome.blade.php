@@ -525,4 +525,45 @@
         </div>
     </div>
     {{-- Fin avis --}}
+
+    {{-- Partenaires --}}
+
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+                <small
+                    class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Partenaires</small>
+                <h1 class="display-5 mb-5 text-paillete">Nos incroyables partenaires!</h1>
+            </div>
+
+            <div class="gallery">
+                <span style="--i:1">
+                    <img src="assets/img/partenaires/bocasay.jpg" alt="" />
+                </span>
+                <span style="--i:2">
+                    <img src="assets/img/partenaires/etech.png" alt="" />
+                </span>
+                <span style="--i:3">
+                    <img src="assets/img/partenaires/pulse-msg.png" alt="" />
+                </span>
+                <span style="--i:4">
+                    <img src="assets/img/partenaires/vivetic.png" alt="" />
+                </span>
+                <span style="--i:5">
+                    <img src='assets/img/partenaires/novity.png' alt="" />
+                </span>
+                <span style="--i:6">
+                    <img src="assets/img/partenaires/mndpt.png" alt="" />
+                </span>
+                <span style="--i:7">
+                    <img src="assets/img/partenaires/telma.png" alt="" />
+                </span>
+                <span style="--i:8">
+                    <img src="assets/img/partenaires/hodi.png" alt="" />
+                </span>
+            </div>
+        </div>
+    </div>
+
+    {{-- Fin Partenaires --}}
 @endsection
