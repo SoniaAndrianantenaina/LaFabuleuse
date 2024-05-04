@@ -7,7 +7,7 @@ body {
 }
 
 .text-light {
-    color: #fff !important;
+    color: rgb(154, 154, 154) !important;
 }
 
 .ctn-video {
@@ -15,12 +15,22 @@ body {
     position: absolute;
 }
 
-.pb-20 {
-    padding-top: 20rem;
+.pb-12 {
+    padding-top: 12rem;
 }
 
 .style-title {
     position: relative;
     left: 250px;
     top: 150px;
+}
+
+.text-paillete {
+    background: url("../img/paillette.jpg");
+    background-clip: text; /* Limiter l'image de fond à la zone de texte */
+    color: transparent;
+}
+
+.mt-100 {
+    margin-top: 100px;
 }
