@@ -121,3 +121,15 @@ CREATE TABLE `reservation` (
   CONSTRAINT `reservation_FK_2` FOREIGN KEY (`idTheme`) REFERENCES `themes` (`id`),
   CONSTRAINT `reservation_FK_3` FOREIGN KEY (`idLieux`) REFERENCES `lieux` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+-- fabulous.reservation_service definition
+
+CREATE TABLE `reservation_service` (
+  `idreservation` int DEFAULT NULL,
+  `idservice` int DEFAULT NULL,
+  KEY `reservation_service_FK` (`idreservation`),
+  KEY `reservation_service_FK_1` (`idservice`),
+  CONSTRAINT `reservation_service_FK` FOREIGN KEY (`idreservation`) REFERENCES `reservation` (`id`),
+  CONSTRAINT `reservation_service_FK_1` FOREIGN KEY (`idservice`) REFERENCES `services` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
