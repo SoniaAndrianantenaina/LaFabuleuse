@@ -1,8 +1,14 @@
 @extends('layout.footer')
 @section('content')
-   
+    <div class="video-header">
+        <video width="320" height="240" controls>
+            <source src="{{ asset('assets/video/header-video.mp4') }}" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+    </div>
 
     <!-- Hero Start -->
+
     <div class="container-fluid bg-light py-6 my-6 mt-0">
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -20,8 +26,7 @@
                         More</a>
                 </div>
                 <div class="col-lg-5 col-md-12">
-                    <img src="{{ asset('assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn"
-                        alt="">
+                    <img src="{{ asset('assets/img/hero.png') }}" class="img-fluid rounded animated zoomIn" alt="">
                 </div>
             </div>
         </div>
@@ -252,8 +257,7 @@
                 <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
             </div>
             <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
-                    data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
                     <li class="nav-item p-2">
                         <a class="d-flex mx-2 py-2 border border-primary bg-light rounded-pill active"
                             data-bs-toggle="pill" href="#tab-1">
@@ -373,9 +377,8 @@
                                                 src="{{ asset('assets/img/event-8.jpg') }}" alt="">
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Corporate</h4>
-                                                <a href="{{ asset('assets/img/event-8.jpg') }}"
-                                                    data-lightbox="event-17" class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                <a href="{{ asset('assets/img/event-8.jpg') }}" data-lightbox="event-17"
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -405,8 +408,7 @@
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Wedding</h4>
                                                 <a href="{{ asset('assets/img/01.jpg') }}" data-lightbox="event-9"
-                                                    class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -425,8 +427,7 @@
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Corporate</h4>
                                                 <a href="{{ asset('assets/img/01.jpg') }}" data-lightbox="event-10"
-                                                    class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -437,8 +438,7 @@
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Corporate</h4>
                                                 <a href="{{ asset('assets/img/01.jpg') }}" data-lightbox="event-11"
-                                                    class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -457,8 +457,7 @@
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Cocktail</h4>
                                                 <a href="{{ asset('assets/img/01.jpg') }}" data-lightbox="event-12"
-                                                    class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -469,8 +468,7 @@
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Cocktail</h4>
                                                 <a href="{{ asset('assets/img/01.jpg') }}" data-lightbox="event-13"
-                                                    class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -489,8 +487,7 @@
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Buffet</h4>
                                                 <a href="{{ asset('assets/img/01.jpg') }}" data-lightbox="event-14"
-                                                    class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -501,8 +498,7 @@
                                             <div class="event-overlay d-flex flex-column p-4">
                                                 <h4 class="me-auto">Buffet</h4>
                                                 <a href="{{ asset('assets/img/01.jpg') }}" data-lightbox="event-15"
-                                                    class="my-auto"><i
-                                                        class="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                    class="my-auto"><i class="fas fa-search-plus text-dark fa-2x"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -527,8 +523,7 @@
                 <h1 class="display-5 mb-5">Most Popular Food in the World</h1>
             </div>
             <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp"
-                    data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center mb-5 wow bounceInUp" data-wow-delay="0.1s">
                     <li class="nav-item p-2">
                         <a class="d-flex py-2 mx-2 border border-primary bg-white rounded-pill active"
                             data-bs-toggle="pill" href="#tab-6">
@@ -568,8 +563,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-01.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Paneer</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -583,8 +577,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-02.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sweet Potato</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -598,8 +591,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-03.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sabudana Tikki</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -613,8 +605,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-04.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Pizza</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -628,8 +619,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-05.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Bacon</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -643,8 +633,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-06.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Chicken</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -658,8 +647,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-07.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Blooming</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -673,8 +661,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-08.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sweet</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -692,8 +679,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-01.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Argentinian</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -707,8 +693,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-03.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Crispy</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -722,8 +707,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-05.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sabudana Tikki</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -737,8 +721,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-07.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Blooming</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -752,8 +735,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-08.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Argentinian</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -767,8 +749,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-03.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Lemon</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -782,8 +763,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-02.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Water Drink</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -797,8 +777,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-01.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Salty lemon</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -816,8 +795,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-01.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Crispy water</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -831,8 +809,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-02.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Juice</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -846,8 +823,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-03.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Orange</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -861,8 +837,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-04.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Apple Juice</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -876,8 +851,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-05.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Banana</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -891,8 +865,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-06.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sweet Water</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -906,8 +879,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-07.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Hot Coffee</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -921,8 +893,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-08.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sweet Potato</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -940,8 +911,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-06.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sabudana Tikki</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -955,8 +925,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-07.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Crispy</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -970,8 +939,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-09.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Pizza</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -985,8 +953,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-02.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Bacon</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1000,8 +967,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-03.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Chicken</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1015,8 +981,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-05.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Blooming</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1030,8 +995,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-07.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sweet</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1045,8 +1009,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-09.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Argentinian</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1064,8 +1027,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-06.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sabudana Tikki</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1079,8 +1041,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-07.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Crispy</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1094,8 +1055,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-09.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Pizza</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1109,8 +1069,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-02.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Bacon</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1124,8 +1083,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-03.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Chicken</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1139,8 +1097,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-05.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Blooming</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1154,8 +1111,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-07.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Sweet</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1169,8 +1125,7 @@
                                     <img class="flex-shrink-0 img-fluid rounded-circle"
                                         src="{{ asset('assets/img/menu-09.jpg') }}" alt="">
                                     <div class="w-100 d-flex flex-column text-start ps-4">
-                                        <div
-                                            class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
+                                        <div class="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                             <h4>Argentinian</h4>
                                             <h4 class="text-primary">$90</h4>
                                         </div>
@@ -1193,9 +1148,8 @@
         <div class="container">
             <div class="row g-0">
                 <div class="col-1">
-                    <img src="{{ asset('assets/img/background-site.jpg') }}"
-                        class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;"
-                        alt="">
+                    <img src="{{ asset('assets/img/background-site.jpg') }}" class="img-fluid h-100 w-100 rounded-start"
+                        style="object-fit: cover; opacity: 0.7;" alt="">
                 </div>
                 <div class="col-10">
                     <div class="border-bottom border-top border-primary bg-light py-5 px-4">
@@ -1261,8 +1215,7 @@
                                     placeholder="Your Contact No.">
                             </div>
                             <div class="col-lg-4 col-md-6">
-                                <input type="date" class="form-control border-primary p-2"
-                                    placeholder="Select Date">
+                                <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
                             </div>
                             <div class="col-lg-4 col-md-6">
                                 <input type="email" class="form-control border-primary p-2"
@@ -1276,9 +1229,8 @@
                     </div>
                 </div>
                 <div class="col-1">
-                    <img src="{{ asset('assets/img/background-site.jpg') }}"
-                        class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;"
-                        alt="">
+                    <img src="{{ asset('assets/img/background-site.jpg') }}" class="img-fluid h-100 w-100 rounded-end"
+                        style="object-fit: cover; opacity: 0.7;" alt="">
                 </div>
             </div>
         </div>
@@ -1298,8 +1250,7 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
-                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-1.jpg') }}"
-                            alt="">
+                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-1.jpg') }}" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">
                             <h4 class="text-primary">Henry</h4>
                             <p class="text-white mb-0">Decoration Chef</p>
@@ -1307,19 +1258,18 @@
                         <div class="team-icon d-flex flex-column justify-content-center m-4">
                             <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
                                     class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-instagram"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded">
-                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-2.jpg') }}"
-                            alt="">
+                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-2.jpg') }}" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">
                             <h4 class="text-primary">Jemes Born</h4>
                             <p class="text-white mb-0">Executive Chef</p>
@@ -1327,19 +1277,18 @@
                         <div class="team-icon d-flex flex-column justify-content-center m-4">
                             <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
                                     class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-instagram"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded">
-                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-3.jpg') }}"
-                            alt="">
+                        <img class="img-fluid rounded-top " src="{{ asset('assets/img/team-3.jpg') }}" alt="">
                         <div class="team-content text-center py-3 bg-dark rounded-bottom">
                             <h4 class="text-primary">Martin Hill</h4>
                             <p class="text-white mb-0">Kitchen Porter</p>
@@ -1347,12 +1296,12 @@
                         <div class="team-icon d-flex flex-column justify-content-center m-4">
                             <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
                                     class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-instagram"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1367,12 +1316,12 @@
                         <div class="team-icon d-flex flex-column justify-content-center m-4">
                             <a class="share btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
                                     class="fas fa-share-alt"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-twitter"></i></a>
-                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2"
-                                href=""><i class="fab fa-instagram"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="share-link btn btn-primary btn-md-square rounded-circle mb-2" href=""><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1489,8 +1438,7 @@
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp"
-                data-wow-delay="0.3s">
+            <div class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp" data-wow-delay="0.3s">
                 <div class="testimonial-item rounded bg-light">
                     <div class="d-flex mb-3">
                         <img src="{{ asset('assets/img/testimonial-1.jpg') }}"
@@ -1606,8 +1554,7 @@
                 <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                     <div class="blog-item">
                         <div class="overflow-hidden rounded">
-                            <img src="{{ asset('assets/img/blog-1.jpg') }}" class="img-fluid w-100"
-                                alt="">
+                            <img src="{{ asset('assets/img/blog-1.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
                         <div class="blog-content mx-4 d-flex rounded bg-light">
                             <div class="text-dark bg-primary rounded-start">
@@ -1624,8 +1571,7 @@
                 <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
                     <div class="blog-item">
                         <div class="overflow-hidden rounded">
-                            <img src="{{ asset('assets/img/blog-2.jpg') }}" class="img-fluid w-100"
-                                alt="">
+                            <img src="{{ asset('assets/img/blog-2.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
                         <div class="blog-content mx-4 d-flex rounded bg-light">
                             <div class="text-dark bg-primary rounded-start">
@@ -1642,8 +1588,7 @@
                 <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
                     <div class="blog-item">
                         <div class="overflow-hidden rounded">
-                            <img src="{{ asset('assets/img/blog-3.jpg') }}" class="img-fluid w-100"
-                                alt="">
+                            <img src="{{ asset('assets/img/blog-3.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
                         <div class="blog-content mx-4 d-flex rounded bg-light">
                             <div class="text-dark bg-primary rounded-start">
@@ -1662,5 +1607,3 @@
     </div>
     <!-- Blog End -->
 @endsection
-
-    
