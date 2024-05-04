@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -43,11 +44,11 @@
 
 
     <!-- Navbar start -->
-    <div class="container-fluid nav-bar">
+    <div class="container-fluid nav-bar style-navbar">
         <div class="container">
             <nav class="navbar navbar-light navbar-expand-lg py-4">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-primary fw-bold mb-0">La<span class="text-dark">Fabulous</span> </h1>
+                    <h1 class="text-primary fw-bold mb-0">La<span class="text-light">Fabulous</span> </h1>
                 </a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -68,8 +69,9 @@
                         </div>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    
-                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Accéder à nos offres</a>
+
+                    <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Accéder à
+                        nos offres</a>
                 </div>
             </nav>
         </div>
@@ -98,7 +100,7 @@
     <!-- Modal Search End -->
 
 
-   @yield('content')
+    @yield('content')
     <!-- Footer Start -->
     <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -128,9 +130,9 @@
                                     class="fa fa-check text-primary me-2"></i>Soirée Mondaine </a>
                             <a class="text-body mb-3" href=""><i
                                     class="fa fa-check text-primary me-2"></i>Soirée professionnelle</a>
-                            <a class="text-body mb-3" href=""><i
-                                    class="fa fa-check text-primary me-2"></i>Sur mesure pour vos</a>
-                            
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sur
+                                mesure pour vos</a>
+
                         </div>
                     </div>
                 </div>
@@ -145,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
