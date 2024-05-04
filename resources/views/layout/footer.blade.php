@@ -137,7 +137,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item">
-                        <h4 class="mb-4">Contact Us</h4>
+                        <h4 class="mb-4">Contact</h4>
                         <div class="d-flex flex-column align-items-start">
                             <p><i class="fa fa-phone-alt text-primary me-2"></i> (+261) 32 76 929 85</p>
                             <p><i class="fas fa-envelope text-primary me-2"></i> L@Fabulous.com</p>
