@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Admins;
+use App\Models\Clients;
+
 
 class LoginController extends Controller
 {
@@ -15,17 +18,29 @@ class LoginController extends Controller
         $password = $request->password;
         // dd($password);
 
-        $user = Users::where('email', $request->email)->first();
-        // dd($user);
+        $admin = Admins::where('mail', $request->email)->first();
 
-        if ($user != null) {
-            if ($password === $user->mdp) {
-                session()->put('idUser', $user->id);
-                return redirect()->route('dashboard');
-            } else if ($password !== $user->mdp) {
+        $client = Clients::where('email', $request->email)->first();
+        // dd($client);
+
+        if ($admin != null) { //admin
+            if ($password === $admin->mdp) {
+                session()->put('idAdmin', $admin->id);
+                return redirect()->route('accueil');
+            } else if ($password !== $admin->mdp) {
                 $errorMessage = 'Le mot de passe est incorrect';
             } 
             // dd($errorMessage);
+            return redirect()->back()->withErrors(['erreurs' => $errorMessage]);
+        }
+
+        else if ($client != null) { //si client
+            if ($mdp === $client->mdp) {
+                session()->put('idClient', $client->id);
+                return redirect()->route('accueil_client');
+            } else if (!$mdp) {
+                $errorMessage = 'Le mot de passe est incorrect';
+            }
             return redirect()->back()->withErrors(['erreurs' => $errorMessage]);
         }
 

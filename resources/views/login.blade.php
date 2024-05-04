@@ -34,6 +34,7 @@
       <div class="user_forms-login">
         <h2 class="forms_title">Login</h2>
         <form class="forms_form" method="POST" action="{{ route('connectUser') }}">
+            @csrf
           <fieldset class="forms_fieldset">
             <div class="forms_field">
               <input type="email" placeholder="Email" name="email" class="forms_field-input" required autofocus />
@@ -42,27 +43,45 @@
               <input type="password" placeholder="Mot de Passe" name="password" class="forms_field-input" required />
             </div>
           </fieldset>
+          @if ($errors->any())
+                <div>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
           <div class="forms_buttons">
             <input type="submit" value="Se connecter" class="forms_buttons-action">
           </div>
         </form>
       </div>
       <div class="user_forms-signup">
-        <h2 class="forms_title">Sign Up</h2>
-        <form class="forms_form">
+        <h2 class="forms_title">Inscription</h2>
+        <form class="forms_form" method="POST" action="{{ route('traaitementInscription') }}">
           <fieldset class="forms_fieldset">
             <div class="forms_field">
-              <input type="text" placeholder="Full Name" name="" class="forms_field-input" required />
+              <input type="text" placeholder="Nom" name="nom" class="forms_field-input" required />
             </div>
             <div class="forms_field">
-              <input type="email" placeholder="Email" class="forms_field-input" required />
+              <input type="email" placeholder="Email" name="email" class="forms_field-input" required />
             </div>
             <div class="forms_field">
-              <input type="password" placeholder="Password" class="forms_field-input" required />
+                <input type="text" placeholder="Contact" name="contact" class="forms_field-input" required />
+              </div>
+              <div class="forms_field">
+                <input type="text" placeholder="Adresse" name="adresse" class="forms_field-input" required />
+              </div>
+            <div class="forms_field">
+              <input type="password" placeholder="Mot de passe" name="password" class="forms_field-input" required />
             </div>
+            <div class="forms_field">
+                <input type="password" placeholder="Retape le mot de passe" class="forms_field-input" required />
+              </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="Sign up" class="forms_buttons-action">
+            <input type="submit" value="S'inscrire'" class="forms_buttons-action">
           </div>
         </form>
       </div>

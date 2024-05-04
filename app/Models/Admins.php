@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TypeClients extends Model
+class Admins extends Model
 {
     use HasFactory;
 
-    protected $table = 'typeclients';
+    protected $table = 'admins';
 
-    protected $fillable = ['nom'];
-
+    protected $fillable = ['nom', 'email', 'mdp'];
 }
