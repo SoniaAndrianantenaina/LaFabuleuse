@@ -6335,6 +6335,7 @@ fieldset:disabled .btn {
     order: 6 !important;
 }
 .m-0 {
+    color: rgb(231, 228, 228);
     margin: 0 !important;
 }
 .m-1 {
@@ -6764,6 +6765,7 @@ fieldset:disabled .btn {
     font-size: calc(1.275rem + 0.3vw) !important;
 }
 .fs-5 {
+    color: rgb(231, 228, 228);
     font-size: 1.25rem !important;
 }
 .fs-6 {
@@ -6903,7 +6905,7 @@ fieldset:disabled .btn {
     background-color: #c29e59 !important;
 }
 .bg-dark {
-    background-color: #050709 !important;
+    background-color: #08182b !important;
 }
 .bg-body {
     background-color: #fff !important;

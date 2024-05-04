@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/reservation', function () {
     return view('reservation/booking');
 })->name('booking');
+Route::get('/liste-des-services',function(){
+    return view('serviceList');
+});

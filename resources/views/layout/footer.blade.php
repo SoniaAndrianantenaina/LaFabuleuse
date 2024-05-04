@@ -48,7 +48,7 @@
         <div class="container">
             <nav class="navbar navbar-light navbar-expand-lg py-4">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-primary fw-bold mb-0">La<span class="text-light">Fabulous</span> </h1>
+                    <h1 class="text-paillete fw-bold mb-0">La<span class="text-light">Fabulous</span> </h1>
                 </a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -58,7 +58,7 @@
                     <div class="navbar-nav mx-auto">
                         <a href="{{url ('/')}}" class="nav-item nav-link active">Accueil</a>
                         <a href="about.html" class="nav-item nav-link">A propos</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="{{url('/liste-des-services')}}" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu bg-light">
@@ -102,21 +102,23 @@
 
     @yield('content')
     <!-- Footer Start -->
-    <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container-fluid footer py-6 my-6 mb-0 wow bounceInUp bg-blue" data-wow-delay="0.1s">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-item">
-                        <h1 class="text-primary">La<span class="text-dark">Fabulous</span></h1>
-                        <p class="lh-lg mb-4">Votre destination pour réserver vos soirées entièrement en ligne.</p>
+                        <h1 class="text-paillete">La<span class="text-light">Fabulous</span></h1>
+                        <p class="lh-lg mb-4 text-light">Votre destination pour réserver vos soirées entièrement en
+                            ligne.</p>
                         <div class="footer-icon d-flex">
-                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle text-paillete"
+                                href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-sm-square me-2 rounded-circle text-paillete"
+                                href=""><i class="fab fa-twitter"></i></a>
+                            <a href="#"
+                                class="btn btn-primary btn-sm-square me-2 rounded-circle text-paillete"><i
                                     class="fab fa-instagram"></i></a>
-                            <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i
+                            <a href="#" class="btn btn-primary btn-sm-square rounded-circle text-paillete"><i
                                     class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
@@ -124,13 +126,14 @@
 
                 <div class="col-lg-4 col-md-6" style="margin-left:4rem;">
                     <div class="footer-item">
-                        <h4 class="mb-4">Spécialités</h4>
+                        <h4 class="mb-4 text-light">Spécialités</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <a class="text-body mb-3" href=""><i
+                            <a class="text-body mb-3 text-light" href=""><i
                                     class="fa fa-check text-primary me-2"></i>Soirée Mondaine </a>
-                            <a class="text-body mb-3" href=""><i
+                            <a class="text-body mb-3 text-light" href=""><i
                                     class="fa fa-check text-primary me-2"></i>Soirée professionnelle</a>
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sur
+                            <a class="text-body mb-3 text-light" href=""><i
+                                    class="fa fa-check text-primary me-2"></i>Sur
                                 mesure pour vos</a>
 
                         </div>
@@ -139,11 +142,12 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item">
-                        <h4 class="mb-4">Contact Us</h4>
+                        <h4 class="mb-4 text-light">Contact</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (+261) 32 76 929 85</p>
-                            <p><i class="fas fa-envelope text-primary me-2"></i> L@Fabulous.com</p>
-                            <p><i class="fa fa-clock text-primary me-2"></i> Service 24/6</p>
+                            <p class="text-light"><i class="fa fa-phone-alt text-primary me-2"></i> (+261) 32 76 929
+                                85</p>
+                            <p class="text-light"><i class="fas fa-envelope text-primary me-2"></i> L@Fabulous.com</p>
+                            <p class="text-light"><i class="fa fa-clock text-primary me-2"></i> Service 24/6</p>
                         </div>
                     </div>
                 </div>
@@ -159,14 +163,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light">Copyright <a href="#"><i
-                                class="fas fa-copyright text-light me-2"></i>La Fabulous</a></span>
+                    Copyright<span class="text-paillete"> <i class="fas fa-copyright me-2"></i>LaFabulous</span>
                 </div>
                 <div class="col-md-6 my-auto text-center text-md-end text-white">
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">Ampela Impakt</a> avec amour.
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">Ampela Impakt</a> with love.
                 </div>
             </div>
         </div>
