@@ -527,7 +527,6 @@
     {{-- Fin avis --}}
 
     {{-- Partenaires --}}
-
     <div class="container-fluid py-6">
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
@@ -564,6 +563,8 @@
             </div>
         </div>
     </div>
-
     {{-- Fin Partenaires --}}
+
+    {{-- A propos --}}
+    {{-- Fin A propos --}}
 @endsection
