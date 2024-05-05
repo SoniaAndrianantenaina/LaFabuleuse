@@ -26,24 +26,29 @@ class LoginController extends Controller
         if ($admin != null) { //admin
             if ($password === $admin->mdp) {
                 session()->put('idAdmin', $admin->id);
-                return redirect()->route('accueil');
+                return redirect()->route('accueil_admin');
             } else if ($password !== $admin->mdp) {
                 $errorMessage = 'Le mot de passe est incorrect';
             } 
             // dd($errorMessage);
-            return redirect()->back()->withErrors(['erreurs' => $errorMessage]);
+            return redirect()->back()->withErrors(['errors' => $errorMessage]);
         }
 
         else if ($client != null) { //si client
-            if ($mdp === $client->mdp) {
+            if ($password === $client->mdp) {
                 session()->put('idClient', $client->id);
-                return redirect()->route('accueil_client');
-            } else if (!$mdp) {
+                return redirect()->route('accueil');
+            } else if ($password !== $client->mdp) {
                 $errorMessage = 'Le mot de passe est incorrect';
             }
-            return redirect()->back()->withErrors(['erreurs' => $errorMessage]);
+            return redirect()->back()->withErrors(['errors' => $errorMessage]);
         }
 
-        return back()->withErrors(['erreurs' => 'Email non existant']);
+        return back()->withErrors(['errors' => 'Email non existant']);
+    }
+
+    public function deconnect() {
+        session()->invalidate();
+        return redirect()->route('login');
     }
 }
