@@ -21,8 +21,8 @@ typeChoices.forEach(typeChoice => {
             var checkIcon = document.createElement('i');
             checkIcon.classList.add('fas', 'fa-check', 'text-white', 'fa-2x');
             checkIcon.style.fontSize = '6rem';
-            typeChoice.style.textAlign = 'center'; 
-            checkIcon.style.marginTop = '4rem'; 
+            typeChoice.style.textAlign = 'center';
+            checkIcon.style.marginTop = '4rem';
             typeChoice.appendChild(checkIcon);
 
             var bookingForm = document.getElementById('bookingForm');
@@ -37,16 +37,15 @@ typeChoices.forEach(typeChoice => {
             })
         }
 
-        
+
     })
 });
 
-var serviceTitles = document.querySelectorAll('.serviceTitle');
-serviceTitles.forEach(serviceTitle =>{
-    serviceTitle.addEventListener('click', () => {
-        $('#ModalService').modal('show');
-    });
-})
+window.onload = () => {
+    $('#ModalService').modal('show');
+}
+
+
 
 var closeButton = document.querySelector('#closeButton');
 closeButton.addEventListener('click', ()=>{

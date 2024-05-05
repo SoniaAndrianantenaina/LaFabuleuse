@@ -35,7 +35,7 @@
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100"
                                                 src="{{ asset('assets/img/formal-party.jpg') }}" alt="">
-                                            <div class="event-overlay d-flex flex-column p-4 typeChoice"
+                                            <div class="event-overlay d-flex flex-column p-4 typeChoice" id="1"
                                                 style="cursor: pointer;" data-toggle="collapse" data-target="#bookingForm"
                                                 aria-expanded="false" aria-controls="bookingForm">
                                                 <h2 class="me-auto" style="font-family: Playball, cursive !important">
@@ -48,7 +48,7 @@
                                         <div class="event-img position-relative">
                                             <img class="img-fluid rounded w-100"
                                                 src="{{ asset('assets/img/pro-party.jpg') }}" alt="">
-                                            <div class="event-overlay d-flex flex-column p-4 typeChoice"
+                                            <div class="event-overlay d-flex flex-column p-4 typeChoice" id="2"
                                                 style="cursor: pointer;" data-toggle="collapse" data-target="#bookingForm"
                                                 aria-expanded="false" aria-controls="bookingForm">
                                                 <h2 class="me-auto" tyle="font-family: Playball, cursive !important">
@@ -93,9 +93,9 @@
                             <div class="col-lg-4 col-md-6">
                                 <select class="form-select border-primary p-2" aria-label="Default select example">
                                     <option selected>Thème</option>
-                                    <option value="1">Depend On Country</option>
-                                    <option value="2">UK</option>
-                                    <option value="3">India</option>
+                                    @foreach ($themes as $theme)
+                                        <option value="{{ $theme->id }}">{{ $theme->nom }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="col-lg-4 col-md-6">
@@ -104,9 +104,9 @@
                             <div class="col-lg-4 col-md-6">
                                 <select class="form-select border-primary p-2" aria-label="Default select example">
                                     <option selected>Lieu</option>
-                                    <option value="1">Event Type</option>
-                                    <option value="2">Big Event</option>
-                                    <option value="3">Small Event</option>
+                                    @foreach ($lieux as $lieu)
+                                        <option value="{{$lieu->id}}">{{$lieu->nom}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div class="col-lg-4 col-md-6">
@@ -162,7 +162,7 @@
                                     <i class="fas fa-leaf" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete">DECORATION</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>2])}}">DECORATION</a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
 
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">TRAITEUR</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>1])}}">TRAITEUR</a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                                     <i class="fas fa-music" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">ANIMATION</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>3])}}">ANIMATION</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,7 @@
 
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">JEUX</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>4])}}">JEUX</a>
                         </div>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
                                     <i class="fas fa-map-marker" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">LIEU</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>7])}}">INVITATION</a>
                         </div>
                     </div>
                 </div>
@@ -251,7 +251,7 @@
                                     <i class="fas fa-wine-glass" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">BAR</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>5])}}">BAR</a>
                         </div>
                     </div>
                 </div>
@@ -266,123 +266,4 @@
     </div>
     <!-- Book Us End -->
 
-    {{-- Modal start --}}
-    <div class="modal fade" id="ModalService" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-paillete" id="exampleModalLongTitle">Choix de Décoration</h5>
-                    <span aria-hidden="true"><i class="fa fa-x" data-dismiss="modal" aria-label="Close"
-                            aria-hidden="true"></i></span>
-                </div>
-                <div class="modal-body">
-                    <div class="Modal_holder">
-                        <table width="100%">
-                            <tr class="Modal_tr">
-                                <td class="Modal_td">Include me in the public list</td>
-                                <td class="Modal_td">
-                                    <div>
-                                        <input class="Modal_input" type="checkbox" />
-                                        <span></span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="Modal_tr">
-                                <td colspan="2">
-                                    <ul>
-                                        <li>Option 1</li>
-                                        <li>Option 2</li>
-                                        <li>Option 3</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr class="Modal_tr">
-                                <td class="Modal_td">Let my friends see my phone number</td>
-                                <td class="Modal_td">
-                                    <div>
-                                        <input class="Modal_input" type="checkbox" />
-                                        <span></span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="Modal_tr">
-                                <td colspan="2">
-                                    <ul>
-                                        <li>Option 1</li>
-                                        <li>Option 2</li>
-                                        <li>Option 3</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr class="Modal_tr">
-                                <td class="Modal_td">Let my friends see my email address</td>
-                                <td class="Modal_td">
-                                    <div>
-                                        <input class="Modal_input" type="checkbox" checked="" />
-                                        <span></span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="Modal_tr">
-                                <td colspan="2">
-                                    <ul>
-                                        <li>Option 1</li>
-                                        <li>Option 2</li>
-                                        <li>Option 3</li>
-                                    </ul>
-                                </td>
-                            </tr>
-
-                        </table>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn" id="closeButton" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id="saveButton">Enregistrer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="modal fade" id="ModalInvitation" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-paillete" id="exampleModalLongTitle">Invitation</h5>
-                    <span aria-hidden="true"><i class="fa fa-x" data-dismiss="modal" aria-label="Close"
-                            aria-hidden="true"></i></span>
-                </div>
-                <div class="modal-body">
-                    <div class="Modal_holder">
-                        <h3>Voulez-vous qu'on s'occupe de l'invitation?</h3>
-                        <div class="row">
-                            <div style="display: inline-block;">
-                                <p>
-                                    <input class="Modal_input" type="checkbox" checked="" />
-                                    <span class="text-paillette">OUI</span>
-                                </p>
-
-                            </div>
-
-                            <div style="display: inline-block;">
-                                <p>
-                                    <input class="Modal_input" type="checkbox" checked="" />
-                                    <span class="text-paillette">NON</span>
-                                </p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="saveButton">Enregistrer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 @endsection
