@@ -31,6 +31,7 @@
     <!-- Template Stylesheet -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/curseur.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -197,6 +198,7 @@
     <!-- Template Javascript -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
     <script src="{{ asset('assets/js/booking.js') }}"></script>
+    <script src="{{ asset('assets/js/souris.js') }}"></script>
 
 </body>
 
