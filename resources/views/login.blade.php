@@ -42,16 +42,19 @@
             <div class="forms_field">
               <input type="password" placeholder="Mot de Passe" name="password" class="forms_field-input" required />
             </div>
+            <div class="forms_field">
+                @if ($errors->any())
+                    <div style="color: red;">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+            </div>
           </fieldset>
-          @if ($errors->any())
-                <div>
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+          
           <div class="forms_buttons">
             <input type="submit" value="Se connecter" class="forms_buttons-action">
           </div>
@@ -60,7 +63,7 @@
       <div class="user_forms-signup">
         <h2 class="forms_title">Inscription</h2>
         <form class="forms_form" method="POST" action="{{ route('traitementInscription') }}">
-
+            @csrf
           <fieldset class="forms_fieldset">
             <div class="forms_field">
                 Vous êtes :
