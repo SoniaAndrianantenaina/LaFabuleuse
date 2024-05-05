@@ -8,7 +8,7 @@
     </div>
 
     <!-- About Satrt -->
-    <div class="container-fluid py-6 pb-5">
+    <div class="container-fluid py-6 pb-5" id="about_us">
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
                 <small
@@ -315,7 +315,7 @@
     {{-- Avis --}}
     <div class="container-fluid py-6">
         <div class="container">
-            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <div class="text-center wow bounceInUp" id="testimonial" data-wow-delay="0.1s">
                 <small
                     class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Témoignages</small>
                 <h1 class="display-5 mb-5 text-paillete">Découvrez les retours des clients !</h1>
@@ -530,7 +530,7 @@
     <!-- Team Start -->
     <div class="container-fluid team py-6">
         <div class="container">
-            <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <div class="text-center wow bounceInUp" id="team" data-wow-delay="0.1s">
                 <small
                     class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Team</small>
                 <h1 class="display-5 mb-5 text-paillete">Nos fabulous coéquipières</h1>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 
@@ -23,3 +24,9 @@ Route::get('/reservation', function () {
 })->name('booking');
 
 Route::get('/liste-des-services', [ServiceController::class, "getAllServices"]);
+// Route::get('/liste-des-services', function () {
+//     return view('serviceList');
+// });
+
+// Envoi Mail
+Route::get('/testEnvoi', [MailController::class, 'testEnvoi'])->name('testEnvoi');
