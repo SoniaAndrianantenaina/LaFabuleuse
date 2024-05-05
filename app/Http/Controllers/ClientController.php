@@ -17,7 +17,10 @@ class ClientController extends Controller
             'mdp' => $request->password,
             'contact' => $request->contact,
             'adresse' => $request->adresse,
+            'typeid' => $request->type,
 
         ]);
+
+        return resirect()->route('login');
     }
 }

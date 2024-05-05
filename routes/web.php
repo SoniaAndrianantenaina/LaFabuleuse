@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,4 @@ Route::get('/login', function() {
 });
 
 Route::post('/connect', [LoginController::class, 'index'])->name('connectUser');
+Route::post('/traitementInscription', [ClientController::class, 'index'])->name('traitementInscription');

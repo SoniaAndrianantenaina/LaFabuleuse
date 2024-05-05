@@ -59,8 +59,22 @@
       </div>
       <div class="user_forms-signup">
         <h2 class="forms_title">Inscription</h2>
-        <form class="forms_form" method="POST" action="{{ route('traaitementInscription') }}">
+        <form class="forms_form" method="POST" action="{{ route('traitementInscription') }}">
+
           <fieldset class="forms_fieldset">
+            <div class="forms_field">
+                Vous êtes :
+            </div>
+            <div class="forms_field">
+                <div style="display: inline-block;">
+                    <input type="radio" id="particulier" name="type" value="1">
+                    <label for="particulier">Particulier</label>
+                </div>
+                <div style="display: inline-block;">
+                    <input type="radio" id="entreprise" name="type" value="2">
+                    <label for="entreprise">Entreprise</label>
+                </div>
+              </div>
             <div class="forms_field">
               <input type="text" placeholder="Nom" name="nom" class="forms_field-input" required />
             </div>
@@ -74,14 +88,11 @@
                 <input type="text" placeholder="Adresse" name="adresse" class="forms_field-input" required />
               </div>
             <div class="forms_field">
-              <input type="password" placeholder="Mot de passe" name="password" class="forms_field-input" required />
+              <input type="password" placeholder="Mot de passe" name="mdp" class="forms_field-input" required />
             </div>
-            <div class="forms_field">
-                <input type="password" placeholder="Retape le mot de passe" class="forms_field-input" required />
-              </div>
           </fieldset>
           <div class="forms_buttons">
-            <input type="submit" value="S'inscrire'" class="forms_buttons-action">
+            <input type="submit" value="S'inscrire" class="forms_buttons-action">
           </div>
         </form>
       </div>

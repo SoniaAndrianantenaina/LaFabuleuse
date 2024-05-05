@@ -255,6 +255,7 @@ input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: #fff;
+  margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   transition: background-color 0.2s ease-in-out;
@@ -290,6 +291,7 @@ input::placeholder {
 .user_options-forms.bounceLeft {
   -webkit-animation: bounceLeft 1s forwards;
           animation: bounceLeft 1s forwards;
+          overflow-y: auto;
 }
 .user_options-forms.bounceLeft .user_forms-signup {
   -webkit-animation: showSignUp 1s forwards;
