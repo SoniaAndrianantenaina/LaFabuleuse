@@ -26,7 +26,8 @@
                         Ces soirées sont généralement fréquentées par des personnes de la haute société, des célébrités, des
                         personnalités influentes et des membres de la classe aisée. </p>
                     <a href="{{ url('/liste-des-services') }}" target="_blank"
-                        class="btn btn-primary py-3 px-5 rounded-pill">Plus<i class="fas fa-arrow-right ps-2"></i></a>
+                        class="btn btn-primary py-3 px-5 rounded-pill btn-plus">Plus<i
+                            class="fas fa-arrow-right ps-2"></i></a>
                 </div>
             </div>
 
@@ -39,7 +40,8 @@
                         clients ou des investisseurs, offrant un cadre formel ou semi-formel propice aux échanges, aux
                         présentations professionnelles et aux activités de networking. </p>
                     <a href="{{ url('/liste-des-services') }}" target="_blank"
-                        class="btn btn-primary py-3 px-5 rounded-pill">Plus<i class="fas fa-arrow-right ps-2"></i></a>
+                        class="btn btn-primary py-3 px-5 rounded-pill btn-plus">Plus<i
+                            class="fas fa-arrow-right ps-2"></i></a>
                 </div>
                 <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
                     <img src="{{ asset('assets/img/soiree-pro.jpg') }}" class="img-fluid rounded" alt="">

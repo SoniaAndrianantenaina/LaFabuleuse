@@ -19,9 +19,10 @@
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.6s">
                 <small
-                    class="d-inline-block fw-bold text-white text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3" style="background-color:#0f2949 !important;">Catalogue
+                    class="d-inline-block fw-bold text-white text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
+                    style="background-color:#0f2949 !important;">Catalogue
                     de Soirées</small>
-                <h1 class="display-5 mb-5 text-paillete">Les soirées pris en charge</h1>
+                <h1 class="display-5 mb-5 text-paillete">Les soirées prises en charge</h1>
             </div>
             <div class="tab-class text-center">
 
@@ -144,7 +145,8 @@
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.6s">
                 <small
-                    class="d-inline-block fw-bold text-white text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3" style="background-color:#0f2949 !important;">Services</small>
+                    class="d-inline-block fw-bold text-white text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3"
+                    style="background-color:#0f2949 !important;">Services</small>
                 <h1 class="display-5 mb-5 text-paillete">Sélectionnez les options de service souhaitées</h1>
             </div>
             <div class="row gx-4 justify-content-center">
@@ -153,8 +155,9 @@
                         <div class="overflow-hidden rounded">
                             <img src="{{ asset('assets/img/decoration.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
-                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle" style="background-color:#0f2949 !important;">
-                            <div class="text-dark bg-primary rounded-start" >
+                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle"
+                            style="background-color:#0f2949 !important;">
+                            <div class="text-dark bg-primary rounded-start">
                                 <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
                                     <i class="fas fa-leaf" aria-hidden="true"></i>
                                 </div>
@@ -169,14 +172,15 @@
                         <div class="overflow-hidden rounded">
                             <img src="{{ asset('assets/img/buffet.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
-                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle" style="background-color:#0f2949 !important;">
+                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle"
+                            style="background-color:#0f2949 !important;">
                             <div class="text-dark bg-primary rounded-start">
                                 <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
                                     <i class="fa fa-utensils" aria-hidden="true"></i>
 
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete" >TRAITEUR</a>
+                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">TRAITEUR</a>
                         </div>
                     </div>
                 </div>
@@ -186,13 +190,14 @@
                         <div class="overflow-hidden rounded">
                             <img src="{{ asset('assets/img/dj2.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
-                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle" style="background-color:#0f2949 !important;">
+                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle"
+                            style="background-color:#0f2949 !important;">
                             <div class="text-dark bg-primary rounded-start">
                                 <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
                                     <i class="fas fa-music" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete" >ANIMATION</a>
+                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">ANIMATION</a>
                         </div>
                     </div>
                 </div>
@@ -204,14 +209,15 @@
                         <div class="overflow-hidden rounded">
                             <img src="{{ asset('assets/img/jeu.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
-                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle" style="background-color:#0f2949 !important;">
+                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle"
+                            style="background-color:#0f2949 !important;">
                             <div class="text-dark bg-primary rounded-start">
                                 <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
                                     <i class="fa fa-chess-queen" aria-hidden="true"></i>
 
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete" >JEUX</a>
+                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">JEUX</a>
                         </div>
                     </div>
                 </div>
@@ -221,13 +227,14 @@
                         <div class="overflow-hidden rounded">
                             <img src="{{ asset('assets/img/lieu.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
-                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle" style="background-color:#0f2949 !important;">
+                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle"
+                            style="background-color:#0f2949 !important;">
                             <div class="text-dark bg-primary rounded-start">
                                 <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
                                     <i class="fas fa-map-marker" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete" >LIEU</a>
+                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">LIEU</a>
                         </div>
                     </div>
                 </div>
@@ -237,13 +244,14 @@
                         <div class="overflow-hidden rounded">
                             <img src="{{ asset('assets/img/bar_tender.jpg') }}" class="img-fluid w-100" alt="">
                         </div>
-                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle" style="background-color:#0f2949 !important;">
+                        <div class="blog-content mx-4 d-flex rounded bg-light serviceTitle"
+                            style="background-color:#0f2949 !important;">
                             <div class="text-dark bg-primary rounded-start">
                                 <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
                                     <i class="fas fa-wine-glass" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete" >BAR</a>
+                            <a href="#" class="h5 lh-base my-auto h-100 p-3 text-paillete">BAR</a>
                         </div>
                     </div>
                 </div>

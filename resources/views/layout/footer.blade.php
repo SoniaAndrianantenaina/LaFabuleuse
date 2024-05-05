@@ -57,18 +57,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="{{ url('/') }}" class="nav-item nav-link active">Accueil</a>
+                        <a href="{{ url('/') }}" class="nav-item nav-link">Accueil</a>
                         <a href="{{ url('/') }}#about_us" class="nav-item nav-link">A propos</a>
                         <a href="{{ url('/liste-des-services') }}" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu bg-light">
-                                    <a href="{{route('booking')}}" class="dropdown-item">Reservation</a>
-                                    <a href="{{ url('/') }}#team" class="dropdown-item">L'équipe</a>
-                                    <a href="{{ url('/') }}#testimonial" class="dropdown-item">Témoignages</a>
-                                </div>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu bg-light">
+                                <a href="{{ route('booking') }}" class="dropdown-item">Reservation</a>
+                                <a href="{{ url('/') }}#team" class="dropdown-item">L'équipe</a>
+                                <a href="{{ url('/') }}#testimonial" class="dropdown-item">Témoignages</a>
                             </div>
+                        </div>
                         <a href="{{ url('/') }}#footer" class="nav-item nav-link">Contact</a>
+                        <a href="#" class="nav-item nav-link fs-style">D</a>
                     </div>
 
                     <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Accéder à
