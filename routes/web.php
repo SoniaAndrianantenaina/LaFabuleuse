@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,5 @@ Route::get('/', function () {
 Route::get('/reservation', function () {
     return view('reservation/booking');
 })->name('booking');
-Route::get('/liste-des-services',function(){
-    return view('serviceList');
-});
+
+Route::get('/liste-des-services', [ServiceController::class, "getAllServices"]);
