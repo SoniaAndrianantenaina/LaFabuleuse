@@ -44,6 +44,8 @@ Route::get('/login', function() {
 })->name('login');
 
 Route::post('/connect', [LoginController::class, 'index'])->name('connectUser');
+Route::get('/envoyerMail', [ReservationController::class, 'envoieEmail'])->name('envoyerMail');
 Route::post('/traitementInscription', [ClientController::class, 'ajoutClient'])->name('traitementInscription');
 
 Route::get('/modal/{id}', [ReservationController::class, 'modal'])->name('modal');
+Route::get('/backBooking', [ReservationController::class, 'backBooking'])->name('backBooking');

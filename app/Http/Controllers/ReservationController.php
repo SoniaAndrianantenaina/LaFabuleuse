@@ -50,4 +50,18 @@ class ReservationController extends Controller
         return view('reservation/modal', compact('details'));
     }
 
+    public function envoieEmail()
+    {
+        return redirect()->back()->with('success','Votre demande a bien été envoyée, veuillez cliquer sur okay');
+    }
+
+    public function backBooking()
+    {
+        $typesoirees = TypeSoiree::all();
+        $themes = Themes::all();
+        $lieux = Lieux::all();
+        $services = Services::all();
+        $servicesDEtails = ServicesDetails::all();
+        return view('reservation/booking', compact('typesoirees','themes','lieux','services','servicesDEtails'));
+    }
 }

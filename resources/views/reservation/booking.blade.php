@@ -105,7 +105,7 @@
                                 <select class="form-select border-primary p-2" aria-label="Default select example">
                                     <option selected>Lieu</option>
                                     @foreach ($lieux as $lieu)
-                                        <option value="{{$lieu->id}}">{{$lieu->nom}}</option>
+                                        <option value="{{ $lieu->id }}">{{ $lieu->nom }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -126,7 +126,7 @@
 
                             </div>
                             <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill"
+                                <button type="submit" id="Suivant" class="btn btn-primary px-5 py-3 rounded-pill"
                                     data-toggle="collapse" data-target="#bookingForm2" aria-expanded="false"
                                     aria-controls="bookingForm2">Suivant</button>
                             </div>
@@ -162,7 +162,8 @@
                                     <i class="fas fa-leaf" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>2])}}">DECORATION</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete"
+                                href="{{ url('modal', ['id' => 2]) }}">DECORATION</a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +181,8 @@
 
                                 </div>
                             </div>
-                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>1])}}">TRAITEUR</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete"
+                                href="{{ url('modal', ['id' => 1]) }}">TRAITEUR</a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +199,8 @@
                                     <i class="fas fa-music" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>3])}}">ANIMATION</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete"
+                                href="{{ url('modal', ['id' => 3]) }}">ANIMATION</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +220,8 @@
 
                                 </div>
                             </div>
-                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>4])}}">JEUX</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete"
+                                href="{{ url('modal', ['id' => 4]) }}">JEUX</a>
                         </div>
                     </div>
                 </div>
@@ -234,7 +238,8 @@
                                     <i class="fas fa-map-marker" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>7])}}">INVITATION</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete"
+                                href="{{ url('modal', ['id' => 7]) }}">INVITATION</a>
                         </div>
                     </div>
                 </div>
@@ -251,7 +256,8 @@
                                     <i class="fas fa-wine-glass" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete" href="{{url('modal',['id'=>5])}}">BAR</a>
+                            <a class="h5 lh-base my-auto h-100 p-3 text-paillete"
+                                href="{{ url('modal', ['id' => 5]) }}">BAR</a>
                         </div>
                     </div>
                 </div>
@@ -259,11 +265,60 @@
             </div>
 
             <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill"
-                    id="ConfirmBooking">Envoyer</button>
+                <a href="{{ route('envoyerMail') }}">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill"
+                        id="ConfirmBooking">Envoyer</button>
+                </a>
             </div>
         </div>
     </div>
-    <!-- Book Us End -->
+    <script>
+        @if (session('success'))
+            Swal.fire({
+                icon: 'success',
+                title: 'Succès',
+                text: '{{ session('success') }}',
+            });
+        @endif
 
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('hey');
+            console.log(localStorage.getItem('idtype'));
+            if (localStorage.getItem('idtype')) {
+                // if (typeChoice.id == localStorage.getItem('idtype')) {
+                    console.log('coucou');
+                    var reserve = document.getElementById(localStorage.getItem('idtype'));
+                    reserve.style.position = 'absolute';
+                    reserve.style.width = '100%';
+                    reserve.style.height = '100%';
+                    reserve.style.top = '0';
+                    reserve.style.left = '0';
+                    reserve.style.background = 'rgba(212, 167, 98, 0.7)';
+                    reserve.style.borderRadius = '8px';
+                    reserve.style.opacity = '1';
+                    reserve.style.zIndex = '1';
+
+                    var checkIcon = document.createElement('i');
+                    checkIcon.classList.add('fas', 'fa-check', 'text-white', 'fa-2x');
+                    checkIcon.style.fontSize = '6rem';
+                    reserve.style.textAlign = 'center';
+                    checkIcon.style.marginTop = '4rem';
+                    reserve.appendChild(checkIcon);
+
+                    var bookingForm = document.getElementById('bookingForm');
+                    bookingForm.classList.add('animate__animated', 'animate__bounceInUp');
+                    bookingForm.hidden = false;
+
+                    $(document).ready(function() {
+                        $('#Suivant').click();
+                    });
+                // /}
+            }
+        });
+
+
+
+
+    </script>
+    <!-- Book Us End -->
 @endsection

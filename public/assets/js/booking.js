@@ -8,6 +8,7 @@ typeChoices.forEach(typeChoice => {
         });
 
         if (!hasCheckIcon) {
+            localStorage.setItem('idtype', typeChoice.id)
             typeChoice.style.position = 'absolute';
             typeChoice.style.width = '100%';
             typeChoice.style.height = '100%';
@@ -43,16 +44,25 @@ typeChoices.forEach(typeChoice => {
 
 window.onload = () => {
     $('#ModalService').modal('show');
+
+
 }
 
 
-
-var closeButton = document.querySelector('#closeButton');
-closeButton.addEventListener('click', ()=>{
-    $('#ModalService').modal('hide');
-})
-
-// var ConfirmBooking = document.querySelector('#ConfirmBooking');
-// ConfirmBooking.addEventListener('click', ()=>{
-//     $('#ModalInvitation').modal('show');
+// var closeButton = document.querySelector('#closeButton');
+// closeButton.addEventListener('click', ()=>{
+//     $('#ModalService').modal('hide');
 // })
+
+var saveButton = document.querySelector('#saveButton');
+var inputs = document.querySelectorAll('.Modal_input');
+inputs.forEach(element => {
+    element.addEventListener('click', () => {
+        console.log('coucou');
+    if (element.checked) {
+        localStorage.setItem('reserve', element.value);
+    }
+})
+});
+
+
