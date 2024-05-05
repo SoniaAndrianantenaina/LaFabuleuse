@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\LoginController;
@@ -25,9 +26,11 @@ Route::get('/hello', function () {
     return "hello";
 });
 
-Route::get('/reservation', function () {
-    return view('reservation/booking');
-})->name('booking');
+// Route::get('/reservation', function () {
+//     return view('reservation/booking');
+// })->name('booking');
+
+Route::get('/reservation', [ReservationController::class,'pourReserver'])->name('booking');
 
 Route::get('/liste-des-services', [ServiceController::class, "getAllServices"]);
 // Route::get('/liste-des-services', function () {
@@ -42,3 +45,5 @@ Route::get('/login', function() {
 
 Route::post('/connect', [LoginController::class, 'index'])->name('connectUser');
 Route::post('/traitementInscription', [ClientController::class, 'ajoutClient'])->name('traitementInscription');
+
+Route::get('/modal/{id}', [ReservationController::class, 'modal'])->name('modal');

@@ -11,6 +11,6 @@ class TypeClients extends Model
 
     protected $table = 'typeclients';
 
-    protected $fillable = ['nom'];
+    protected $fillable = ['id','nom'];
 
 }
