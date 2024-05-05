@@ -3,6 +3,8 @@
 use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,10 @@ use App\Http\Controllers\ServiceController;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('accueil');
+
+Route::get('/hello', function () {
+    return "hello";
 });
 
 Route::get('/reservation', function () {
@@ -30,3 +36,9 @@ Route::get('/liste-des-services', [ServiceController::class, "getAllServices"]);
 
 // Envoi Mail
 Route::get('/testEnvoi', [MailController::class, 'testEnvoi'])->name('testEnvoi');
+Route::get('/login', function() {
+    return view('login');
+})->name('login');
+
+Route::post('/connect', [LoginController::class, 'index'])->name('connectUser');
+Route::post('/traitementInscription', [ClientController::class, 'ajoutClient'])->name('traitementInscription');
