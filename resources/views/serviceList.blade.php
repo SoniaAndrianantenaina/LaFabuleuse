@@ -6,53 +6,16 @@
         <div class="container">
             <div class="carte-caroussel">
                 <main>
-
                     <ul class='slider'>
-                        <li class='item' style="background-image: url({{ asset('assets/img/bar_tender.jpg') }})">
+                        @foreach ($services as $service)
+                        <li class='item' style="background-image: url('{{ asset('assets/img/'.$service->image) }}');">
                             <div class='content'>
-                                <h2 class='title'>"Bar"</h2>
-                                <p class='description'> Un barman peut être à votre disposition, pour ajouter un peu de peps
-                                    à votre soirée. </p>
+                                <h2 class='title'>"{{$service->nom}}"</h2>
+                                <p class='description'>{{$service->description}}</p>
 
                             </div>
                         </li>
-                        <li class='item' style="background-image: url({{ asset('assets/img/caterer.jpg') }})">
-                            <div class='content'>
-                                <h2 class='title'>"Un service traiteur"</h2>
-                                <p class='description'>Ayez confiance en nous pour vos repas, cocktails, ou barbecue. Nos
-                                    traiteurs hors pair ne vous decevront pas</p>
-
-                            </div>
-                        </li>
-                        <li class='item' style="background-image: url({{ asset('assets/img/decoration.jpg') }})">
-                            <div class='content'>
-                                <h2 class='title'>"Une Décoration FABULOUS"</h2>
-                                <p class='description'>Donnez du plaisir à vos yeux grâce à nos décorations FABULOUS !!!
-                                    Nous respecterons votre thème, vous serez époustoufflé </p>
-
-                            </div>
-                        </li>
-                        <li class='item' style="background-image: url({{ asset('assets/img/dj2.jpg') }})">
-                            <div class='content'>
-                                <h2 class='title'>"Animations Musique"</h2>
-                                <p class='description'>
-                                    Une fête sans musique est une fête incomplete. Avec notre service animation musique,
-                                    vous avez le choix entre un orchestre ou un DJ pour vous ambiancer
-                                </p>
-
-                            </div>
-                        </li>
-                        <li class='item' style="background-image: url({{ asset('assets/img/bierePong.jpg') }})">
-                            <div class='content'>
-                                <h2 class='title'>"Animations jeux"</h2>
-                                <p class='description'>
-                                    Quoi de mieux pour renforcer votre équipe que des jeux de groupe. Nous pouvons vous
-                                    organiser des petits jeux de groupe pour votre soirée.
-                                </p>
-
-                            </div>
-                        </li>
-
+                        @endforeach
                     </ul>
                     <nav class='nav'>
                         <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
