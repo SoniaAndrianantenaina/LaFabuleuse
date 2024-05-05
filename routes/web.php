@@ -25,7 +25,7 @@ Route::get('/hello', function () {
 
 Route::get('/login', function() {
     return view('login');
-});
+})->name('login');
 
 Route::post('/connect', [LoginController::class, 'index'])->name('connectUser');
-Route::post('/traitementInscription', [ClientController::class, 'index'])->name('traitementInscription');
+Route::post('/traitementInscription', [ClientController::class, 'ajoutClient'])->name('traitementInscription');

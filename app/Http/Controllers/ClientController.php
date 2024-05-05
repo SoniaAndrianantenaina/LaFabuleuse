@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Clients;
+use Illuminate\Support\Facades\DB;
 
 
 class ClientController extends Controller
@@ -11,16 +12,15 @@ class ClientController extends Controller
     public function ajoutClient(Request $request)
     {
 
-        Clients::create([
-            'nom' => $request->name,
+        DB::table('clients')->insert([
+            'idtype' => $request->type,
+            'nom' => $request->nom,
             'email' => $request->email,
-            'mdp' => $request->password,
             'contact' => $request->contact,
             'adresse' => $request->adresse,
-            'typeid' => $request->type,
-
+            'mdp' => $request->mdp,
         ]);
 
-        return resirect()->route('login');
+        return redirect()->route('login');
     }
 }
