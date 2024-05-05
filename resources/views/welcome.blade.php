@@ -7,11 +7,6 @@
         </video>
     </div>
 
-    <form action="{{ route('testEnvoi') }}" method="GET">
-        @csrf
-        <button type="submit" class="btn btn-primary">Envoyer l'e-mail</button>
-    </form>
-
     <!-- About Satrt -->
     <div class="container-fluid py-6 pb-5">
         <div class="container">
